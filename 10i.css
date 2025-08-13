@@ -15,6 +15,7 @@ body {
           border-radius: 100px;
           margin-right: 5px;
           font-weight: bold;
+          cursor: pointer;
       }
       .yellow-btns{
          background-color: rgb(254, 160, 10);
@@ -26,6 +27,7 @@ body {
           border-radius: 100px;
           margin-right: 5px;
           font-weight: bold;
+          cursor: pointer;
       }
       .result{
           color: white;
@@ -36,4 +38,5 @@ body {
       .clear{
          font-size: 17px;
          font-weight: 100;
+         cursor: pointer;
       }
