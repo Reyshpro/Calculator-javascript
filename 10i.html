@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="10i.css">
+  </head>
+
+  <body>
+
+     <p class="result"></p>
+    <p>
+
+      <button onclick="
+        calculation += '1';
+       updateCalculation ();
+      " class="grey-btns">1</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '2';
+       updateCalculation ();
+      ">2</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '3';
+        updateCalculation ();
+      ">3</button>
+
+      <button class="yellow-btns" onclick="
+        calculation += ' + ';
+         updateCalculation ();
+      ">+</button>
+   </p>
+
+    <p>
+      <button class="grey-btns" onclick="
+        calculation += '4';
+        updateCalculation ();
+      ">4</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '5';
+       updateCalculation ();
+      ">5</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '6';
+        updateCalculation ();
+      ">6</button>
+
+      <button  class="yellow-btns" onclick="
+        calculation += ' - ';
+        updateCalculation ();
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="grey-btns" onclick="
+        calculation += '7';
+     updateCalculation ();
+      ">7</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '8';
+       updateCalculation ();
+      ">8</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '9';
+       updateCalculation ();
+      ">9</button>
+
+      <button class="yellow-btns" onclick="
+        calculation += ' * ';
+        updateCalculation ();
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="grey-btns" onclick="
+        calculation += '0';
+        updateCalculation ();
+      ">0</button>
+
+      <button class="grey-btns" onclick="
+        calculation += '.';
+        updateCalculation ();
+      ">.</button>
+
+      <button class="grey-btns" onclick="
+        calculation = eval(calculation);
+        updateCalculation ();
+      ">=</button>
+
+      <button class="yellow-btns" onclick="
+        calculation += ' / ';
+        updateCalculation ();
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="grey-btns clear" onclick="
+         calculation = ' ';
+          localStorage.setItem('calculation', JSON.stringify(calculation));
+          document.querySelector('.result').innerHTML = ' ';
+      ">Clear</button>
+    </p>
+  
+    <script src="10i.js"></script>
+    
+  </body>
+</html>
